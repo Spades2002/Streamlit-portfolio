@@ -211,14 +211,12 @@ elif page == "Projects":
         )
         
         # Load the PDF
-        pdf_path = "C:/Users/Staines/Documents/Robotics, Mechatronics & Control Engineering/Interferometer literature review.pdf"
-        with open(pdf_path, "rb") as pdf_file:
-            pdf_bytes = pdf_file.read()
+        pdf_url = "https://github.com/Spades2002/assets/blob/983a1a5f81036a588c13a7ed017bd227f667763e/Interferometer%20literature%20review.pdf"
 
         # Add download button before "Skills Gained"
         st.download_button(
             label="📄 Download Interferometer Literature Review",
-            data=pdf_bytes,
+            data=pdf_url,  # This now points to the PDF URL
             file_name="Interferometer_literature_review.pdf",
             mime="application/pdf",
         )
