@@ -11,7 +11,7 @@ def image_to_base64(image_path):
         return base64.b64encode(image_file.read()).decode("utf-8")
 
 # Load and convert the image to Base64 (Background image for the whole page)
-background_image_path = "https://raw.githubusercontent.com/Spades2002/assets/refs/heads/main/Black%20background.jpg"
+background_image_url = "https://raw.githubusercontent.com/Spades2002/assets/refs/heads/main/Black%20background.jpg"
 background_image_base64 = image_to_base64(background_image_path)
 
 # Custom CSS to modify title, header, and footer
@@ -19,7 +19,7 @@ css = f"""
 <style>
     /* Set full-page background image */
     .stApp {{
-        background-image: url('data:image/jpeg;base64,{background_image_base64}');
+        background-image: url('{background_image_url}');
         background-size: cover;
         background-position: center;
     }}
