@@ -95,7 +95,7 @@ st.markdown(css, unsafe_allow_html=True)
 
 # Sidebar navigation
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Home", "Projects"])
+page = st.sidebar.radio("Go to", ["Home", "Projects", "Other Projects"])
 
 # Home Section
 if page == "Home":
