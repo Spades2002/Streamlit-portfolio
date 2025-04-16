@@ -271,8 +271,7 @@ elif page == "Other Projects":
             """
             - **Programming Languages:** Python  
             - **Libraries & Tools:** OpenCV, NumPy  
-            - **Hardware Platforms:** Raspberry Pi  
-            - **Soft Skills:** Debugging, Problem-Solving, System Optimisation
+            - **Soft Skills:** Debugging, Problem-Solving, System Optimisation, Machine Learning
             """
         )
         
