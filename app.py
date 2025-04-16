@@ -158,7 +158,7 @@ elif page == "Projects":
         st.write(
             """
             ### **Eco-Friendly Intra-Campus Monorail System Design:**  
-            This project focused on the conceptual design of an eco-friendly intra-campus monorail system for WPS, aimed at enhancing transport efficiency and sustainability. As the project lead, I conducted a comprehensive route analysis to determine the most effective layout, prioritising accessibility, environmental impact, and integration with existing campus infrastructure.
+            This project focused on the conceptual design of an eco-friendly intra-campus monorail system for WSP, aimed at enhancing transport efficiency and sustainability. As the project lead, I conducted a comprehensive route analysis to determine the most effective layout, prioritising accessibility, environmental impact, and integration with existing campus infrastructure.
 
             A key aspect of the design process involved engineering high-capacity carriages tailored for optimal passenger experience. This included advanced HVAC systems to ensure energy-efficient climate control and specialised accommodations for elderly passengers, improving accessibility and inclusivity. Additionally, sustainability was at the forefront of the project, with careful material selection and energy-efficient propulsion methods incorporated into the design.
 
