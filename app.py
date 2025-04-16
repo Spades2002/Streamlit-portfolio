@@ -232,7 +232,7 @@ elif page == "Projects":
 elif page == "Other Projects":
     other_project_page = st.sidebar.selectbox(
         "Select an Other Project",
-        ["Real-time Colour and Object Detection"],
+        ["Colour and Object Detection"],
     )
 
     st.markdown(f"""
@@ -241,11 +241,11 @@ elif page == "Other Projects":
         </div>
     """, unsafe_allow_html=True)
 
-    if other_project_page == "Real-time Colour and Object Detection":
+    if other_project_page == "Colour and Object Detection":
         st.write(
             """
             ### **Real-time Colour and Object Detection Using OpenCV:**  
-            This project combines two fundamental computer vision tasks into a single real-time system. Using a webcam feed, it detects objects via YOLOv8 (a state-of-the-art deep learning model) while simultaneously classifying colors at the screen center with a K-Nearest Neighbors algorithm. The color classifier was trained on a dataset of 865 named colors, enabling precise identification like "Olive Drab" or "Cadet Blue" from RGB values. 
+            This project combines two fundamental computer vision tasks into a single real-time system. Using a webcam feed, it detects objects via YOLOv8 (a state-of-the-art deep learning model) while simultaneously classifying colors at the screen center with a K-Nearest Neighbors algorithm. The color classifier was trained on a dataset of 709 named colors, enabling precise identification like "Sapphire blue" or "St. Patrick's blue" from RGB values. 
             
             
             **Key Innovations**:  
