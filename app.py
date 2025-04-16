@@ -229,3 +229,60 @@ elif page == "Projects":
             - **Software Tools:** Siemens NX, MATLAB
             """
         )
+elif page == "Other Projects":
+    other_project_page = st.sidebar.selectbox(
+        "Select an Other Project",
+        ["Real-time Colour and Object Detection"],
+    )
+
+    st.markdown(f"""
+        <div class="project-header">
+            {other_project_page}
+        </div>
+    """, unsafe_allow_html=True)
+
+    if other_project_page == "Real-time Colour and Object Detection":
+        st.write(
+            """
+            ### **Real-time Colour and Object Detection Using OpenCV:**  
+            This project combines two fundamental computer vision tasks into a single real-time system. Using a webcam feed, it detects objects via YOLOv8 (a state-of-the-art deep learning model) while simultaneously classifying colors at the screen center with a K-Nearest Neighbors algorithm. The color classifier was trained on a dataset of 865 named colors, enabling precise identification like "Olive Drab" or "Cadet Blue" from RGB values. 
+            
+            
+            **Key Innovations**:  
+            - **Hybrid Approach**: Merges deep learning (YOLO) with traditional ML (KNN) for multimodal perception  
+            
+            - **Context-Aware Visualization**: Highlights both detected objects and dominant color regions with adaptive bounding boxes  
+            
+            - **Robust Tolerance Handling**: Dynamically adjusts color matching thresholds (±20 RGB units) to account for lighting variations  
+            
+
+            **Why This Project?**  
+            As a Robotics Engineer specializing in perception systems, I built this to demonstrate my ability to integrate multiple computer vision techniques into functional prototypes. The project showcases:  
+            
+            1. **Algorithm Integration**: Combining pre-trained models with custom ML  
+            2. **Real-Time Constraints**: Balancing accuracy with performance  
+            3. **Problem Decomposition**: Breaking down complex vision tasks into manageable components
+
+            *Part of my ongoing effort to develop portfolio projects that reflect the intersection of robotics, computer vision, and practical software engineering.*  
+            """
+        )
+        st.write("**Skills Gained**:")
+        st.write(
+            """
+            - **Programming Languages:** Python  
+            - **Libraries & Tools:** OpenCV, NumPy  
+            - **Hardware Platforms:** Raspberry Pi  
+            - **Soft Skills:** Debugging, Problem-Solving, System Optimisation
+            """
+        )
+        
+        st.markdown(
+        """
+        <a href="https://github.com/Spades2002/Other-Project-1" target="_blank">
+            <button style="padding: 8px 16px; background-color: #24292e; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                🚀 View GitHub Repository 
+            </button>
+        </a>
+        """,
+        unsafe_allow_html=True
+        )
