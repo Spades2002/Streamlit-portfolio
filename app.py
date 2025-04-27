@@ -3,7 +3,7 @@ from PIL import Image
 import base64
 
 # Page configuration
-st.set_page_config(page_title="Staines's Webpage", page_icon=":copyright:", layout="wide")
+st.set_page_config(page_title="Staines's Portfolio", page_icon=":copyright:", layout="wide")
 
 # Function to convert image to Base64
 def image_to_base64(image_path):
@@ -229,12 +229,13 @@ elif page == "Projects":
             - **Software Tools:** Siemens NX, MATLAB
             """
         )
+        
+# Other Projects Section
 elif page == "Other Projects":
     other_project_page = st.sidebar.selectbox(
         "Select an Other Project",
-        ["Colour and Object Detection"],
+        ["Real-time Colour and Object Detection", "Engineering Job Finder"],
     )
-
     st.markdown(f"""
         <div class="project-header">
             {other_project_page}
@@ -284,4 +285,46 @@ elif page == "Other Projects":
         </a>
         """,
         unsafe_allow_html=True
+        )
+
+    elif other_project_page == "Engineering Job Finder":
+        col1, col2 = st.columns([3, 2])  # Adjust column width as needed
+
+        with col1:
+            # The text part of the project
+            st.write("""
+            This project focuses on creating an efficient platform for users to find engineering job opportunities using web scraping. The platform was built with Python and leverages various job listing APIs for real-time data retrieval. The aim was to automate the job search process and provide users with an intuitive interface.
+
+            **Key Features**:
+            - **Web Scraping**: Real-time job data retrieval using libraries such as BeautifulSoup and Scrapy.
+            - **User Interface**: Designed using Streamlit with interactive features for a seamless user experience.
+            - **Custom Filters**: Allow users to filter job opportunities based on location, industry, and more.
+
+            ### **Key Innovations**:
+            - **Skills Matching**: Uses Natural Language Processing (NLP) to extract skills from uploaded resumes.
+            - **Real-Time Job Listings**: Retrieves the latest engineering job listings from Google Jobs and other job search engines.
+            - **Interactive Interface**: Built using Streamlit, allowing users to upload resumes and immediately see job opportunities based on their skills.
+
+            **Why This Project?**  
+            As a Robotics Engineer, I wanted to create a tool that would simplify the job search process after graduation. This project allows users to easily match their skills with real-world job opportunities, making it an essential tool for those entering the job market.
+
+            **Algorithm and Tools**:
+            1. **NLP (Spacy)**: To extract skills from resumes.
+            2. **Web Scraping (SerpAPI)**: To retrieve real-time job listings from Google Jobs.
+            3. **Streamlit**: For the user interface and seamless interaction.
+            """)
+            
+        with col2:
+            # The image part of the project
+            st.image("https://raw.githubusercontent.com/Spades2002/My-Portfolio/main/job-finder.png", use_container_width=True)
+            
+        st.markdown(
+            """
+            <a href="https://github.com/Spades2002/Other-Project-2" target="_blank">
+                <button style="padding: 8px 16px; background-color: #24292e; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                    🚀 View GitHub Repository 
+                </button>
+            </a>
+            """,
+            unsafe_allow_html=True
         )
