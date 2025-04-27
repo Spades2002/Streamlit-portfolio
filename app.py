@@ -234,7 +234,7 @@ elif page == "Projects":
 elif page == "Other Projects":
     other_project_page = st.sidebar.selectbox(
         "Select an Other Project",
-        ["Real-time Colour and Object Detection", "Engineering Job Finder"],
+        ["Colour and Object Detection", "Engineering Job Finder"],
     )
     st.markdown(f"""
         <div class="project-header">
@@ -242,7 +242,7 @@ elif page == "Other Projects":
         </div>
     """, unsafe_allow_html=True)
 
-    if other_project_page == "Colour and Object Detection":
+    if other_project_page == "Colour and Object Detectio":
         st.write(
             """
             ### **Real-time Colour and Object Detection Using OpenCV:**  
